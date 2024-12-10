@@ -50,6 +50,7 @@ jobs:
       url: https://pizza.dandeanyu.com
     env:
       version: ${{needs.build.outputs.version}}
+
     steps:
       - name: Create OIDC token to AWS
         uses: aws-actions/configure-aws-credentials@v4
